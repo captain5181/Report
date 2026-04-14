@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus reservation</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            justify-items: center;
+        }
+        form{
+            border:2px solid black;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h1>Bus Ticket Reservation</h1>
+        Name:<br>
+        <input type="text" required><br><br>
+        Address: <br>
+        <textarea></textarea><br><br>
+        Contact No: <br>
+        <input type="number" required><br><br>
+        Source: <br>
+        <select>
+            <option>
+                Select option
+            </option>
+            <option value="s">Nimani</option>
+            <option value="s">Old Adgaon</option>
+            <option value="s">Shambhaji Nagar</option>
+            <option value="s">KKWagh college</option>
+            <option value="s">Amrutdham</option>
+        </select><br><br>
+        Destination: <br>
+        <select>
+            <option>
+                Select option
+            </option>
+\            <option value="s">Old Adgaon</option>
+            <option value="s">Shambhaji Nagar</option>
+            <option value="s">KKWagh college</option>
+            <option value="s">Amrutdham</option>
+        </select><br><br>
+        Date of Booking: <br>
+        <input type="date" required><br><br>
+        Date of Journey: <br>
+        <input type="date" required><br><br>
+        No of Passengers: <br>
+        <input type="number" required><br><br>
+        Gender: <br>
+        Male:<input type="radio" name="gender">
+        Female:<input type="radio" name="gender"><br><br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+</body>
+</html>

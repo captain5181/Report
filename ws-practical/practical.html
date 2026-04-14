@@ -1,0 +1,29 @@
+<?php
+function factorial($n)
+{
+ if($n == 0 || $n == 1)
+ return 1;
+ else
+ return $n * factorial($n - 1); // Recursive function
+}
+$number = $_POST['num'];
+$result = factorial($number);
+echo "<h2>Factorial Result</h2>";
+echo "Number: " . $number . "<br><br>";
+echo "Factorial: " . $result;
+?>
+
+
+
+<html>
+<head>
+ <title>Factorial Program</title>
+</head>
+<body>
+<h2>Enter a Number</h2>
+<form method="post" action="practical.php">
+ Number: <input type="number" name="num" min="0" required>
+ <input type="submit" value="Calculate">
+</form>
+</body>
+</html>
